@@ -1,17 +1,16 @@
 <template>
-  <PrimeiroComponente />
   <life-cycle />
+  <pessoa />
+  <form-vue />
 </template>
 
 <script>
+import FormVue from "./components/Form.vue";
 import LifeCycle from "./components/LifeCycle.vue";
-import PrimeiroComponente from "./components/PrimeiroComponente.vue";
+import Pessoa from "./components/Pessoa.vue";
 
 export default {
   name: "App",
-  components: {
-    PrimeiroComponente,
-    LifeCycle,
-  },
+  components: { LifeCycle, Pessoa, FormVue },
 };
 </script>
