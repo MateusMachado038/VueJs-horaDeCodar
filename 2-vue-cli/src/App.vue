@@ -1,16 +1,31 @@
 <template>
-  <life-cycle />
-  <pessoa />
-  <form-vue />
+  <div>
+    <Header />
+    <life-cycle />
+    <pessoa />
+    <form-vue />
+  </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
 import FormVue from "./components/Form.vue";
 import LifeCycle from "./components/LifeCycle.vue";
 import Pessoa from "./components/Pessoa.vue";
 
 export default {
   name: "App",
-  components: { LifeCycle, Pessoa, FormVue },
+  components: { LifeCycle, Pessoa, FormVue, Header },
 };
 </script>
+
+<style>
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+a {
+  color: red;
+}
+</style>
