@@ -13,9 +13,6 @@
       </div>
       <submit-vue />
     </form>
-    <p>Conteudos</p>
-    <p>Conteudos</p>
-    <p>Conteudos</p>
   </div>
 </template>
 
@@ -50,8 +47,4 @@ export default {
 };
 </script>
 
-<style scoped>
-p {
-  margin: 80px;
-}
-</style>
+<style scoped></style>

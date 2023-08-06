@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <PrimeiroComponenteVue />
     <life-cycle />
     <pessoa />
     <form-vue />
@@ -12,10 +13,11 @@ import Header from "./components/Header.vue";
 import FormVue from "./components/Form.vue";
 import LifeCycle from "./components/LifeCycle.vue";
 import Pessoa from "./components/Pessoa.vue";
+import PrimeiroComponenteVue from "./components/PrimeiroComponente.vue";
 
 export default {
   name: "App",
-  components: { LifeCycle, Pessoa, FormVue, Header },
+  components: { LifeCycle, PrimeiroComponenteVue, Pessoa, FormVue, Header },
 };
 </script>
 
