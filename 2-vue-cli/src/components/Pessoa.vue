@@ -2,7 +2,7 @@
   <div>
     <h2>Está é a descrição da pessoa: {{ nome }}</h2>
   </div>
-  <InfoVue />
+  <InfoVue :email="email" :esta_trabalhando="fase" />
 </template>
 
 <script>
@@ -16,6 +16,7 @@ export default {
   data() {
     return {
       nome: "Mateus",
+      email: "mateus@email.com",
     };
   },
 };

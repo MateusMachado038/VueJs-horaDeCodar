@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>{{ email }}</p>
     <p v-if="esta_trabalhando">Estou trabalhando no momento</p>
     <p v-else>Estou em busca de novas oportunidades!</p>
     <p>Utilizo as seguintes tecnologias para back-end</p>
@@ -37,11 +38,13 @@ export default {
   components: {
     PictureVue,
   },
+  props: {
+    email: String,
+    esta_trabalhando: Boolean,
+  },
   data() {
     return {
       mostrar_email: true,
-      esta_trabalhando: false,
-      email: "teste@gmail.com",
       meu_link: "https://google.com",
       textBtn: "Mostrar e-mail",
       backend_tecnologies: ["JavaScript", "PHP", "Python"],
