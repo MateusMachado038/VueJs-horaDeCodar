@@ -9,6 +9,7 @@
 <script>
 import NavBarVue from "./components/NavBar.vue";
 import FooterVue from "./components/Footer.vue";
+import logo from ".//assets/img/logo.png";
 
 export default {
   components: {
@@ -17,8 +18,8 @@ export default {
   },
   data() {
     return {
-      logo_src: ".//assets/img/logo.png",
-      app_name: "Mae Your Burger",
+      logo_src: logo,
+      app_name: "Make Your Burger",
     };
   },
 };
